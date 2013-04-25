@@ -15,7 +15,7 @@ class ServiceAllRequest(RestRequest):
         self.service_type_code = service_type_code
 
     def make_argument(self):
-        RestRequest.makeArgument(self)
+        RestRequest.make_argument(self)
         self.dic["service_type_code"]=self.service_type_code
         return self.dic
 
